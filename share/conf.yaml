@@ -4,4 +4,4 @@
 auto_make: 1
 
 # The command that 'stump speech' runs.
-start_command: ooimpress -nologo -show stump.odp
+start_command: loimpress -nologo -show stump.odp
