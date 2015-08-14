@@ -123,7 +123,8 @@ use constant usage_desc => 'stump clean';
 
 sub execute {
     my ($self, $opt, $args) = @_;
-    system('rm -fr stump stump.odp');
+    #system('rm -fr stump stump.odp');
+    system('rm -fr stump.odp');
 }
 
 #-----------------------------------------------------------------------------#
@@ -154,7 +155,7 @@ sub make {
     my $share = $self->share;
     $self->copy_file("$share/stump.odp", "./stump.odp");
     Stump::Heavy::para2odp();
-    io('stump')->rmtree;
+    #io('stump')->rmtree;
 }
 
 sub share {
